@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AINET – Association of English Teachers</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #0b2a4a;
+            --white: #ffffff;
+            --beige: #f5f2ec;
+            --gold: #c9a24d;
+            --text-dark: #1f2933;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--beige);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        header h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        /* Main */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-heading {
+            font-family: 'Merriweather', serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 25px;
+            border-left: 6px solid var(--gold);
+            padding-left: 15px;
+        }
+
+        /* Ebook Grid */
+        .ebooks-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .ebook-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .ebook-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+        }
+
+        .ebook-image {
+            width: 100%;
+            aspect-ratio: 2 / 3;
+            overflow: hidden;
+        }
+
+        .ebook-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ebook-title {
+            padding: 16px;
+            font-family: 'Merriweather', serif;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            border-top: 3px solid var(--gold);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--navy);
+            color: var(--white);
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .ebooks-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            .logo {
+                width: 55px;
+                height: 55px;
+            }
+
+            .section-heading {
+                font-size: 22px;
+            }
+
+            .ebooks-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .ebook-title {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Replace src with your actual logo URL -->
+    <div class="logo">
+        <img src="ainet logo small.jpg" alt="AINET Logo">
+    </div>
+    <h1>AINET – Association of English Teachers</h1>
+</header>
+
+<main>
+    <h2 class="section-heading">Book Stall</h2>
+
+    <section class="ebooks-grid">
+
+        <a href="https://store.pothi.com/book/krishna-dixit-changing-learners-changing-teachers-ele-new-world/" class="ebook-card" target="_blank">
+            <div class="ebook-image">
+                <img src="Books/1.png" alt="Ebook 1">
+            </div>
+            <div class="ebook-title">Changing Learners, Changing Teachers: ELE in the New World</div>
+        </a>
+
+        <a href="https://store.pothi.com/book/amol-padwad-teachers-muse-vol-3/" class="ebook-card" target="_blank">
+            <div class="ebook-image">
+                <img src="Books/2.png" alt="Ebook 2">
+            </div>
+            <div class="ebook-title">Teachers' Muse, Vol. 3</div>
+        </a>
+
+        <a href="https://store.pothi.com/book/krishna-dixit-teaching-english-multilingual-contexts/" class="ebook-card" target="_blank">
+            <div class="ebook-image">
+                <img src="Books/3.png" alt="Ebook 3">
+            </div>
+            <div class="ebook-title">Teaching English in Multilingual Contexts</div>
+        </a>
+
+        <a href="https://store.pothi.com/book/krishna-dixit-english-language-education-crossroads/" class="ebook-card" target="_blank">
+            <div class="ebook-image">
+                <img src="Books/4.png" alt="Ebook 4">
+            </div>
+            <div class="ebook-title">English Language Education at the Crossroads</div>
+        </a>
+
+        <a href="https://store.pothi.com/book/krishna-dixit-english-language-education-global-south-innovation-inclusion-empowerment/" class="ebook-card" target="_blank">
+            <div class="ebook-image">
+                <img src="Books/5.png" alt="Ebook 5">
+            </div>
+            <div class="ebook-title">English Language Education in the Global South: Innovation, Inclusion, Empowerment</div>
+        </a>
+
+        <a href="https://store.pothi.com/book/dipika-gode-connecting-eight-effective-elt-classrooms-contexts-challenges-and-solutions/" class="ebook-card" target="_blank">
+            <div class="ebook-image">
+                <img src="Books/6.png" alt="Ebook 6">
+            </div>
+            <div class="ebook-title">Connecting Eight Effective ELT Classrooms: Contexts, Challenges and Solutions</div>
+        </a>
+
+    </section>
+</main>
+
+<footer>
+    © AINET – Association of English Teachers. All Rights Reserved.
+</footer>
+
+</body>
+</html>

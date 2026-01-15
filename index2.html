@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AINET – Association of English Teachers</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #0b2a4a;
+            --white: #ffffff;
+            --beige: #f5f2ec;
+            --gold: #c9a24d;
+            --text-dark: #1f2933;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--beige);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        header h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        /* Main */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-heading {
+            font-family: 'Merriweather', serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 25px;
+            border-left: 6px solid var(--gold);
+            padding-left: 15px;
+        }
+
+        /* Ebook Grid */
+        .ebooks-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .ebook-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            max-width: 280px;
+            margin: auto;
+        }
+
+        .ebook-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+        }
+
+        .ebook-image {
+            width: 100%;
+            height: 180px; /* REDUCED SIZE */
+            overflow: hidden;
+        }
+
+        .ebook-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ebook-title {
+            padding: 12px 10px;
+            font-family: 'Merriweather', serif;
+            font-size: 15px;
+            font-weight: 700;
+            text-align: center;
+            border-top: 3px solid var(--gold);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--navy);
+            color: var(--white);
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+
+        /* Tablet */
+        @media (max-width: 992px) {
+            .ebooks-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .ebook-image {
+                height: 170px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            .logo {
+                width: 55px;
+                height: 55px;
+            }
+
+            .section-heading {
+                font-size: 22px;
+            }
+
+            .ebooks-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .ebook-card {
+                max-width: 90%;
+            }
+
+            .ebook-image {
+                height: 160px;
+            }
+
+            .ebook-title {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://via.placeholder.com/200x200?text=AINET+Logo" alt="AINET Logo">
+    </div>
+    <h1>AINET – Association of English Teachers</h1>
+</header>
+
+<main>
+    <h2 class="section-heading">Book Stall</h2>
+
+    <section class="ebooks-grid">
+
+        <a href="#" class="ebook-card">
+            <div class="ebook-image">
+                <img src="Books/1.png" alt="Ebook 1">
+            </div>
+            <div class="ebook-title">English Pedagogy in the 21st Century</div>
+        </a>
+
+        <a href="#" class="ebook-card">
+            <div class="ebook-image">
+                <img src="https://via.placeholder.com/400x600?text=Ebook+2" alt="Ebook 2">
+            </div>
+            <div class="ebook-title">Academic Writing and Research Skills</div>
+        </a>
+
+        <a href="#" class="ebook-card">
+            <div class="ebook-image">
+                <img src="https://via.placeholder.com/400x600?text=Ebook+3" alt="Ebook 3">
+            </div>
+            <div class="ebook-title">Modern Approaches to English Literature</div>
+        </a>
+
+        <a href="#" class="ebook-card">
+            <div class="ebook-image">
+                <img src="https://via.placeholder.com/400x600?text=Ebook+4" alt="Ebook 4">
+            </div>
+            <div class="ebook-title">Language, Culture, and Communication</div>
+        </a>
+
+        <a href="#" class="ebook-card">
+            <div class="ebook-image">
+                <img src="https://via.placeholder.com/400x600?text=Ebook+5" alt="Ebook 5">
+            </div>
+            <div class="ebook-title">Teaching English in Multilingual Classrooms</div>
+        </a>
+
+        <a href="#" class="ebook-card">
+            <div class="ebook-image">
+                <img src="https://via.placeholder.com/400x600?text=Ebook+6" alt="Ebook 6">
+            </div>
+            <div class="ebook-title">Assessment and Evaluation in English Education</div>
+        </a>
+
+    </section>
+</main>
+
+<footer>
+    © AINET – Association of English Teachers. All Rights Reserved.
+</footer>
+
+</body>
+</html>
