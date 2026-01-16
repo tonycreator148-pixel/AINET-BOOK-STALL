@@ -13,7 +13,7 @@
             --navy: #0b2a4a;
             --white: #ffffff;
             --beige: #f5f2ec;
-            --gold: #c9a24d;
+            --gold: #ebb747;
             --text-dark: #1f2933;
         }
 
@@ -27,7 +27,6 @@
             font-family: 'Inter', sans-serif;
             background-color: var(--beige);
             color: var(--text-dark);
-            line-height: 1.6;
         }
 
         header {
@@ -43,7 +42,7 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background-color: var(--white);
+            background: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -83,13 +82,13 @@
         }
 
         .ebook-card {
-            background-color: var(--white);
+            background: #fff;
             border-radius: 8px;
             overflow: hidden;
             text-decoration: none;
             color: inherit;
             box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .ebook-card:hover {
@@ -99,7 +98,6 @@
 
         .ebook-image {
             position: relative;
-            width: 100%;
             aspect-ratio: 2 / 3;
             overflow: hidden;
         }
@@ -127,14 +125,13 @@
         }
 
         .buy-btn {
-            background-color: var(--gold);
+            background: var(--gold);
             color: var(--navy);
             padding: 12px 22px;
-            font-weight: 600;
             border-radius: 30px;
-            font-size: 14px;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            font-size: 14px;
         }
 
         .ebook-title {
@@ -147,8 +144,8 @@
         }
 
         footer {
-            background-color: var(--navy);
-            color: var(--white);
+            background: var(--navy);
+            color: #fff;
             text-align: center;
             padding: 15px;
             margin-top: 60px;
@@ -161,16 +158,9 @@
         }
 
         @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-
             .ebooks-grid {
                 grid-template-columns: 1fr;
             }
-
-            /* Always show Buy button on mobile */
             .buy-overlay {
                 opacity: 1;
                 background: rgba(11, 42, 74, 0.6);
@@ -193,38 +183,70 @@
 
     <section class="ebooks-grid">
 
-        <!-- Repeatable Book Card Structure -->
+        <!-- Books 1–12 -->
+        <!-- Repeatable structure preserved -->
+
+        <!-- BOOK 1 -->
         <a href="https://store.pothi.com/book/krishna-dixit-changing-learners-changing-teachers-ele-new-world/" class="ebook-card" target="_blank">
             <div class="ebook-image">
                 <img src="Books/1.png">
-                <div class="buy-overlay">
-                    <span class="buy-btn">Buy Now</span>
-                </div>
+                <div class="buy-overlay"><span class="buy-btn">Buy Now</span></div>
             </div>
             <div class="ebook-title">Changing Learners, Changing Teachers</div>
         </a>
 
+        <!-- BOOK 2 -->
         <a href="https://store.pothi.com/book/amol-padwad-teachers-muse-vol-3/" class="ebook-card" target="_blank">
             <div class="ebook-image">
                 <img src="Books/2.png">
-                <div class="buy-overlay">
-                    <span class="buy-btn">Buy Now</span>
-                </div>
+                <div class="buy-overlay"><span class="buy-btn">Buy Now</span></div>
             </div>
             <div class="ebook-title">Teachers' Muse, Vol. 3</div>
         </a>
 
+        <!-- BOOK 3 -->
         <a href="https://store.pothi.com/book/krishna-dixit-teaching-english-multilingual-contexts/" class="ebook-card" target="_blank">
             <div class="ebook-image">
                 <img src="Books/3.png">
-                <div class="buy-overlay">
-                    <span class="buy-btn">Buy Now</span>
-                </div>
+                <div class="buy-overlay"><span class="buy-btn">Buy Now</span></div>
             </div>
             <div class="ebook-title">Teaching English in Multilingual Contexts</div>
         </a>
 
-        <!-- Add remaining books using same structure -->
+        <!-- BOOK 4 -->
+        <a href="https://store.pothi.com/book/krishna-dixit-english-language-education-crossroads/" class="ebook-card" target="_blank">
+            <div class="ebook-image">
+                <img src="Books/4.png">
+                <div class="buy-overlay"><span class="buy-btn">Buy Now</span></div>
+            </div>
+            <div class="ebook-title">English Language Education at the Crossroads</div>
+        </a>
+
+        <!-- BOOK 5 -->
+        <a href="https://store.pothi.com/book/krishna-dixit-english-language-education-global-south-innovation-inclusion-empowerment/" class="ebook-card" target="_blank">
+            <div class="ebook-image">
+                <img src="Books/5.png">
+                <div class="buy-overlay"><span class="buy-btn">Buy Now</span></div>
+            </div>
+            <div class="ebook-title">English Language Education in the Global South</div>
+        </a>
+
+        <!-- BOOK 6 -->
+        <a href="https://store.pothi.com/book/dipika-gode-connecting-eight-effective-elt-classrooms-contexts-challenges-and-solutions/" class="ebook-card" target="_blank">
+            <div class="ebook-image">
+                <img src="Books/6.png">
+                <div class="buy-overlay"><span class="buy-btn">Buy Now</span></div>
+            </div>
+            <div class="ebook-title">Connecting Eight Effective ELT Classrooms</div>
+        </a>
+
+        <!-- BOOKS 7–12 -->
+        <a href="#" class="ebook-card"><div class="ebook-image"><img src="Books/7.png"><div class="buy-overlay"><span class="buy-btn">Buy Now</span></div></div><div class="ebook-title">Teachers' Muse, Vol. 4</div></a>
+        <a href="#" class="ebook-card"><div class="ebook-image"><img src="Books/8.png"><div class="buy-overlay"><span class="buy-btn">Buy Now</span></div></div><div class="ebook-title">Innovations in ELT</div></a>
+        <a href="#" class="ebook-card"><div class="ebook-image"><img src="Books/9.png"><div class="buy-overlay"><span class="buy-btn">Buy Now</span></div></div><div class="ebook-title">Contemporary Perspectives on ELT</div></a>
+        <a href="#" class="ebook-card"><div class="ebook-image"><img src="Books/10.png"><div class="buy-overlay"><span class="buy-btn">Buy Now</span></div></div><div class="ebook-title">Teacher Development in ESL</div></a>
+        <a href="#" class="ebook-card"><div class="ebook-image"><img src="Books/11.png"><div class="buy-overlay"><span class="buy-btn">Buy Now</span></div></div><div class="ebook-title">Assessment and Evaluation in ELT</div></a>
+        <a href="#" class="ebook-card"><div class="ebook-image"><img src="Books/12.png"><div class="buy-overlay"><span class="buy-btn">Buy Now</span></div></div><div class="ebook-title">Research Trends in English Education</div></a>
 
     </section>
 </main>
@@ -235,4 +257,3 @@
 
 </body>
 </html>
-
